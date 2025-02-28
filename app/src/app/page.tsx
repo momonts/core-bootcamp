@@ -54,14 +54,16 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-      <h1 className="text-3xl font-bold mb-4">NFT Minting DApp!</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[url('https://i.imgur.com/fC7ndtW.jpeg')] bg-cover">
+      <h1 className="text-3xl font-bold text-black mb-4">
+        DIONELA NFT Minting Site!
+      </h1>
       {account ? (
-        <p className="mb-2">Connected Account: {account}</p>
+        <p className="mb-2 text-black">Connected Account: {account}</p>
       ) : (
         <button
           onClick={connectWallet}
-          className="px-4 py-2 bg-blue-500 text-white rounded"
+          className="px-4 py-2 bg-blue-500 text-white rounded text-black"
         >
           Connect Wallet
         </button>
